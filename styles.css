@@ -1,6 +1,51 @@
-* {
+body {
     background-color: black;
     color: white;
     font-family: Montserrat, sans-serif;
     font-weight: 300;
+}
+
+.nav {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    width: 88%;
+    background-color: #0077ff96;
+    margin-inline: auto;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    z-index: var(--z-fixed);
+}
+
+.nav-list {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    background-color: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: background-color .6s;
+    color: white;
+}
+
+li {
+    background-color: #0077ff00;
+}
+
+li a {
+   text-decoration: none; 
 }
