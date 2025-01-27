@@ -1,85 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Monserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-bg: black;
+    --primary-text: white;
+    --secondary-bg: rgb(0, 0, 110);
+    --accent: #00c55c;
+}
+
 body {
-    background-color: black;
-    color: white;
-    font-family: Montserrat, sans-serif;
-    font-weight: 300;
+    background-color: var(--primary-bg);
 }
 
-h1 {
-    font-weight: 300;
-}
-
-li {
-    background-color: #0077ff00;
-}
-
-li a {
-   text-decoration: none; 
+#logo-text {
+    color: var(--accent);
+    font-family: "Monoton", serif;
+    font-size: 2rem;
+    font-weight: 100;
 }
 
 /* Navigation */
 
-.nav {
-    position: fixed;
-    bottom: 1.5rem;
-    left: 0;
-    right: 0;
-    width: 88%;
-    background-color: #0077ff3a;
-    margin-inline: auto;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    padding: 1rem 2rem;
-    border-radius: 4rem;
-    z-index: var(--z-fixed);
-}
-
-.nav-list {
-    background-color: transparent;
+.navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-link {
-    background-color: transparent;
-    padding: 10px;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 2rem;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    transition: background-color .6s;
-    color: white;
-}
-
-/* Profile */
-
-.profile {
-    position: relative;
-    height: 415px;
-    border-radius: 2rem;
-    padding: 1rem;
-    display: grid;
-    overflow: hidden;
-}
-
-.profile-image {
-    width: 250px;
-    position: absolute;
-    justify-self: center;
-    align-self: flex-end;
-}
-
-.profile-data {
-    align-self: flex-end;
-    background-color: hsla(0, 0%, 1%, 0.1);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    padding: 1.5rem 1 rem;
-    border-radius: 1.5rem;
-    border: 2px solid hsla(0, 0%, 100%, 0.5);
+    align-items: center;
+    padding: 0px 12%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
 }

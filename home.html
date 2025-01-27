@@ -17,6 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    
+    <!-- Logo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles.css">
@@ -24,65 +29,27 @@
 </head>
 
 <body>
-    <!-- NAVIGATION -->
-    <!-- Nav -->
-    <nav class="nav">
-        <ul class="nav-list">
-            <!-- Home -->
-            <li>
-                <a href="#home" title="Home" class="nav-link">
-                    <i class="ri-home-4-line"></i>
-                </a>
-            </li>
-            <!-- Projects -->
-            <li>
-                <a href="#projects" title="Projects" class="nav-link">
-                    <i class="ri-code-s-slash-fill"></i>
-                </a>
-            </li>
-            <!-- Services -->
-            <li>
-                <a href="#services" title="Services" class="nav-link">
-                    <i class="ri-mac-line"></i>
-                </a>
-            </li>
-            <!-- Experience -->
-            <li>
-                <a href="#experience" title="Experience" class="nav-link">
-                    <i class="ri-file-line"></i>
-                </a>
-            </li>
-            <!-- Contact -->
-            <li>
-                <a href="#contact" title="Contact" class="nav-link">
-                    <!-- <i class="ri-send-plane-fill"></i> -->
-                    <i class="ri-chat-3-line"></i>
-                </a>
-            </li>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <h2 id="logo-text">MONA</h2>
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
+
+        <i class="ri-search-line"></i>
+        <i class="ri-menu-line" id="toggle"></i>
+
     </nav>
-
-    <!-- MAIN -->
-    <main class="main">
-        <!-- Home -->
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <!-- Profile -->
-                <div class="profile">
-                    <img src="profile1.jpg" alt="profile image" class="profile-image">
-                    <div class="profile-data">
-                        <h1 class="profile-name">Mona <br> Es-Said</h1>
-
-                        <div class="profile-buttons">
-                            <a href="#projects" class="button">Projects</a>
-                            <a href="#services" class="button">Services</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
 </body>
 
