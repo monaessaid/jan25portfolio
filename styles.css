@@ -23,11 +23,20 @@ body {
 }
 
 #logo-text {
-    color: var(--accent);
-    /* font-family: "Monoton", serif; */
+    /* color: var(--accent); */
+    background: -webkit-linear-gradient(#00c95e, #00ff77, #72ffb4, #b7ffd9, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "Plaster", serif;
     font-size: 2rem;
     font-weight: 100;
+    background-image: gradient;
+}
+
+#logo-text:hover {
+    background-image: linear-gradient(white, #b7ffd9,#72ffb4,#00ff77,#00c95e);
+    transition: var(--transition-slow);
 }
 
 /* Navigation */
