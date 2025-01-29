@@ -23,8 +23,7 @@ body {
 }
 
 #logo-text {
-    /* color: var(--accent); */
-    background: -webkit-linear-gradient(#00c95e, #00ff77, #72ffb4, #b7ffd9, white);
+    background: -webkit-linear-gradient(white, #b7ffd9,#72ffb4,#00ff77, #00c95e);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -35,7 +34,7 @@ body {
 }
 
 #logo-text:hover {
-    background-image: linear-gradient(white, #b7ffd9,#72ffb4,#00ff77,#00c95e);
+    background-image: linear-gradient(#00c95e, #00ff77, #72ffb4, #b7ffd9, white);
     transition: var(--transition-slow);
 }
 
