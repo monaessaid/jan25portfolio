@@ -10,10 +10,10 @@
 
 :root {
     --primary-bg: #18181c;
-    --primary-text: white;
+    --white: white;
     --secondary-bg: #00006e;
     --accent: #00ff77;
-    --border: 1px solid #c9c9c933;
+    --border: 1px solid #83838333;
     --transition-fast: 0.4s ease-in-out;
     --transition-slow: 0.6s ease-in-out;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 #logo-text {
-    background: -webkit-linear-gradient(white, #b7ffd9,#72ffb4,#00ff77, #00c95e);
+    background: -webkit-linear-gradient(left, #ffffff, #b7ffd9,#72ffb4,#00ff77, #00c95e);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -34,13 +34,14 @@ body {
 }
 
 #logo-text:hover {
-    background-image: linear-gradient(#00c95e, #00ff77, #72ffb4, #b7ffd9, white);
+    background-image: linear-gradient(#00c95e, #00ff77, #72ffb4, #b7ffd9, #ffffff);
     transition: var(--transition-slow);
 }
 
 /* Navigation */
 
 .navbar {
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -55,7 +56,7 @@ body {
 .menu {
     display: flex;
     align-items: start;
-    gap: 50px;   
+    gap: 30px;   
 }
 
 .menu li {
@@ -78,7 +79,7 @@ body {
 }
 
 .menu li a{
-    color: var(--primary-text);
+    color: var(--white);
     font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -88,7 +89,42 @@ body {
     display: none;
 }
 
-#nav-search {
-    color: var(--primary-text);
-    font-size: 1rem;
+.nav-search {
+    height: 100%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.nav-search i {
+    height: 100%;
+    font-size: 1.5rem;
+    padding: 0 30px;
+    border-left: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: var(--border);
+}
+
+@media screen and (max-width:900px) {
+    #toggle {
+        display: block;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        padding-left: 12%;
+        background-color: #00000035;
+        backdrop-filter: blur(4px);
+    }
+    
 }
