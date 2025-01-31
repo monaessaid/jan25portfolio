@@ -107,7 +107,7 @@ body {
     border-right: var(--border);
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:970px) {
     #toggle {
         display: block;
         color: var(--white);
@@ -117,14 +117,23 @@ body {
         font-size: 1.5rem;
     }
     .menu {
+        height: 0;
+        overflow: hidden;
         position: absolute;
         flex-direction: column;
         top: 100%;
         left: 0%;
+        gap: 0;
         width: 100%;
         padding-left: 12%;
         background-color: #00000035;
         backdrop-filter: blur(4px);
+        transition: var(--transition-fast);
     }
-    
+    .menu li {
+        padding: 16px 0;
+    }
+    .active {
+        height: 320px;
+    }
 }
