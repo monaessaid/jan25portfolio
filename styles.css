@@ -23,7 +23,7 @@ body {
 }
 
 #logo-text {
-    background: -webkit-linear-gradient(left, #ffffff, #b7ffd9,#72ffb4,#00ff77, #00c95e);
+    background: -webkit-linear-gradient(left, #ffffff, #b7ffd9, #72ffb4, #00ff77, #00c95e);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -56,7 +56,7 @@ body {
 .menu {
     display: flex;
     align-items: start;
-    gap: 30px;   
+    gap: 30px;
 }
 
 .menu li {
@@ -78,7 +78,7 @@ body {
     width: 100%;
 }
 
-.menu li a{
+.menu li a {
     color: var(--white);
     font-size: 1.1rem;
     font-weight: 400;
@@ -107,6 +107,36 @@ body {
     border-right: var(--border);
 }
 
+
+/* Hero Section */
+
+.hero-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/ux.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-container h3 {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.hero-container h1 {
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+
+
 @media screen and (max-width:970px) {
     #toggle {
         display: block;
@@ -116,6 +146,7 @@ body {
         align-items: center;
         font-size: 1.5rem;
     }
+
     .menu {
         height: 0;
         overflow: hidden;
@@ -126,14 +157,23 @@ body {
         gap: 0;
         width: 100%;
         padding-left: 12%;
-        background-color: #00000035;
+        background-color: #00000060;
         backdrop-filter: blur(4px);
         transition: var(--transition-fast);
     }
+
     .menu li {
         padding: 16px 0;
     }
+
     .active {
-        height: 320px;
+        height: 300px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav-search i:nth-child(1) {
+        display: none;
     }
 }
