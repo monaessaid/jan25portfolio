@@ -5,7 +5,7 @@ toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
-var swiper = new Swiper('.hero-swiper', {
+const swiper = new Swiper('.hero-swiper', {
     slidesPerView: 1,
     effect: 'fade',
     autoplay: {
