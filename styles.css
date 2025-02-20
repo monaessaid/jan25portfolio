@@ -231,8 +231,7 @@ section {
     right: 0;
     top: 0;
     height: 100%;
-    /* background-color: #262626; */
-    background-color: #00ff807e;
+    background-color: #00ca5e;
     width: 40px;
     border-radius: 30px;
     transition: var(--transition-slow);
