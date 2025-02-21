@@ -148,9 +148,9 @@ body {
 }
 
 .hero-container h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--white);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .hero-container h1 {
@@ -160,7 +160,7 @@ body {
 .hero-container h1 {
     font-size: 4rem;
     color: var(--white);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 /* Services */
@@ -253,6 +253,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .services-wrap {
@@ -261,7 +263,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     place-content: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .service-item { 
@@ -270,7 +272,9 @@ section {
     flex-direction: column;
     align-items: start;
     padding: 30px;
-    background-color: #161a2946;
+    background-color: #1d1d1d7c;
+    gap: 20px;
+    border-radius: 5px;
 }
 
 .service-image {
@@ -279,7 +283,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .service-image img {
@@ -291,12 +294,18 @@ section {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .service-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.service-content p {
     font-size: 1.2rem;
-    font-weight: 400;
-    color: var(--accent);
+    font-weight: 300;
+    line-height: 1.5rem;
 }
 
 /* Media Queries */
