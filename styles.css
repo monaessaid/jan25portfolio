@@ -272,9 +272,12 @@ section {
     flex-direction: column;
     align-items: start;
     padding: 30px;
-    background-color: #1d1d1d7c;
     gap: 20px;
     border-radius: 5px;
+}
+
+.service-item:hover {
+    background-color: #3b3b3b50;
 }
 
 .service-image {
@@ -309,6 +312,18 @@ section {
 }
 
 /* Media Queries */
+
+@media screen and (max-width:1400px) {
+    .services-wrap {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .service-content p{
+        font-size: 1rem;
+    }
+}
 
 @media screen and (max-width:970px) {
     #toggle {
@@ -352,6 +367,19 @@ section {
 
     .hero-container h3 {
         font-size: 2rem;
+    }
+
+    .services-wrap {
+        gap: 15px;
+    }
+
+    .service-image {
+        height: 60px;
+        width: 60px;
+    }
+
+    .services-wrap {
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
