@@ -12,3 +12,9 @@ const swiper = new Swiper('.hero-swiper', {
         delay: 6000,
     },
 })
+
+const swiper2 = new Swiper('.projects-swiper', {
+    slidesPerView: 3,
+    loop: true,
+    autoplay: true
+});
