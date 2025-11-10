@@ -314,9 +314,106 @@ section {
     line-height: 1.5rem;
 }
 
+/* Projects New Code Added 11/10/25 */
+
+#portfolio {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+#projects-span {
+    color: var(--accent);
+    font-size: 1.5rem;
+    border-bottom: var(--border2);
+    width: 100%;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    /* margin-top: 50px; */
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(hsla(0, 0%, 0%, 0.451), hsla(0, 0%, 0%, 0.9), #192312);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: justify;
+    transition: height 0.5s;
+}
+
+.layer h2 {
+    margin-bottom: 20px;
+    color: #00ca5e;
+}
+
+.layer h3:hover {
+    color: white;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+#project-details {
+    color: white;
+}
+
+#project-button {
+    background-color: rgba(0, 0, 0, 0.504);
+    width: 200px;
+    border: white solid;
+    border-width: 0.5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    margin: 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+#project-button:hover {
+    background-color: #00ca5ea8;
+    border-radius: 50px;
+    transition: var(--transition-slow);
+}
+
 /* Projects */
 
-.projects {
+/* .projects {
     flex-direction: column;
 }
 
@@ -324,8 +421,8 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;   
-}
+    align-items: center;
+} */
 
 /* Media Queries */
 
