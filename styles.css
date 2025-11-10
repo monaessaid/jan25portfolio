@@ -407,7 +407,7 @@ section {
 }
 
 #project-button:hover {
-    background-color: #72ffb44d;
+    background-color: #00c95e;
     border-radius: 50px;
     transition: var(--transition-slow);
 }
