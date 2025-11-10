@@ -14,7 +14,7 @@ const swiper = new Swiper('.hero-swiper', {
 })
 
 const swiper2 = new Swiper('.projects-swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     loop: true,
     autoplay: true
 });
