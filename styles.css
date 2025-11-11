@@ -574,7 +574,8 @@ form textarea {
 
     .active {
         height: 300px;
-        opacity: 1;
+        backdrop-filter: blur(5px);
+        background-color: #00000035;
     }
 }
 
@@ -628,7 +629,7 @@ form textarea {
         font-size: 1.5rem;
     }
 
-        .layer h2 {
+    .layer h2 {
         font-size: 14px;
     }
 
