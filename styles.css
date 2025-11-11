@@ -627,4 +627,12 @@ form textarea {
     .hero-container h3 {
         font-size: 1.5rem;
     }
+
+        .layer h2 {
+        font-size: 14px;
+    }
+
+    #project-details {
+        font-size: 12px;
+    }
 }
